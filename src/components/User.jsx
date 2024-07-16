@@ -10,7 +10,7 @@ export default function User({ posts }) {
      const user = useGetUser()
      useEffect(() => {
           setLoading(true)
-          axios.get('http://localhost:8000/api/profile')
+          axios.get('https://simple-posting-app-api.vercel.app/api/profile')
           .then((res) => {
                setUsers(res.data)
                setLoading(false)

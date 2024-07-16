@@ -12,7 +12,7 @@ export default function SignUp() {
      const onSubmit = (e) => {
           e.preventDefault()
           setError(null)
-          axios.post('http://localhost:8000/api/register', {
+          axios.post('https://simple-posting-app-api.vercel.app/api/register', {
                name: 'Guest',
                email: email,
                password: password,

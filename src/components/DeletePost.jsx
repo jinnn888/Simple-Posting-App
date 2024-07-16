@@ -10,7 +10,7 @@ export default function Delete() {
      let user = useGetUser()
      let navigate = useNavigate()
      useEffect(() => {
-          axios.delete(`http://localhost:8000/api/post/${id}`, {
+          axios.delete(`https://simple-posting-app-api.vercel.app/api/post/${id}`, {
                headers: {
                     'Authorization': `Bearer ${user}`
                }

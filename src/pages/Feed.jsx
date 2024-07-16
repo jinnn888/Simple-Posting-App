@@ -17,7 +17,7 @@ export default function Feed() {
      let user = useGetUser()
      // Get all post
      useEffect(() => {
-          axios.get('http://localhost:8000/api/post')
+          axios.get('https://simple-posting-app-api.vercel.app/api/post')
           .then(res => {
                setGetPost(res.data)
           })
