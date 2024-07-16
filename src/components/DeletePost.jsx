@@ -6,12 +6,11 @@ import useGetUser from '../hooks/useGetUser.js'
 
 export default function Delete() {
      const BASE_URL = import.meta.env.BASE_URL
-     console.log(url)
      const { id } = useParams()
      let user = useGetUser()
      let navigate = useNavigate()
      useEffect(() => {
-          axios.delete(`${BASE_URL}/api/post/${id}`, {
+          axios.delete(`http://localhost:8000/api/post/${id}`, {
                headers: {
                     'Authorization': `Bearer ${user}`
                }
