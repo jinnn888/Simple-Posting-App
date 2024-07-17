@@ -23,7 +23,7 @@ export default function RenderPost({ posts, email }) {
           key={index}>
           { content.image ? (<img 
                src={content.image} 
-               alt='Cannot load image.'
+               alt='Plese try another image.'
                /> 
                ) : ''}
           <br/> 

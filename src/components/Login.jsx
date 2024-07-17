@@ -18,7 +18,7 @@ export default function Login() {
           e.preventDefault()
           setInvalidPass(null)
           setInvalidEmail(null)
-          axios.post(`https://simple-posting-app-api.vercel.app/api/login`, {
+          axios.post(`http://localhost:8000/api/posts/:8000/api/login`, {
                name: 'Guest',
                email,
                password

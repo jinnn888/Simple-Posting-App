@@ -4,8 +4,8 @@ import '../App.css'
 export default function Form({ lead, email, setEmail, password, setPassword, onSubmit, error, invalidPass, invalidEmail }) {
      return (<>
           <div className='container m-5 Form max-w-lg-75'>
+               <form className='postForm' onSubmit={e => onSubmit(e)}>
                <span className='lead'> { lead } </span>
-               <form onSubmit={e => onSubmit(e)}>
                     <div className='row m-2'>
                          <label className='col-form-label'>Email</label>
                          <div>
