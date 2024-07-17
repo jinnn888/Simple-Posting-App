@@ -27,6 +27,6 @@ export default function Modal() {
           type="button" class="btn-close" aria-label="Close"></button>
           <h1 style={{color: 'green'}}> SignUp Successfully </h1>
           <p> Please log in. </p>
-          <a href='/login'>Login page.</a>
+          <a href='https://simple-posting-app-l8j7.vercel.app/login'>Login page.</a>
           </div>)
 }
