@@ -21,15 +21,34 @@ img {
      }
      .mobile-nav {
           display: block !important;
-          width: 100%;
-          padding: 20px;
+     }
+     .mobile-nav div{
+          margin: 5px;
+          width: 90%;
+          padding: 2px;
+          background: black;   
+          border-radius: 5px;
      }
      .active{ 
           top:0;
      }
      .Form {
-          max-width: 90%;
+          width: 90%;
+          margin: 12px !important;
+          padding: 0;
+          position: relative;
+          left: 0;
+
      }
+     .postForm {
+          width:100%;
+          position: absolute;
+          top: 0;
+          text-align: center;
+     }
+     .postForm span{ 
+          font-weight: bold;
+      }
      .activenav {
           width: 100%;
           transition: .3s;
@@ -41,5 +60,8 @@ img {
      }
      .activebtn {
           display:block !important;
+          position: absolute;
+          top: 0;
+          left: 2%;
      }
 }
