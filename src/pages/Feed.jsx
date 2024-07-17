@@ -28,7 +28,7 @@ export default function Feed() {
 
      const onSubmit = (e) => {
           e.preventDefault()
-          axios.post('http://localhost:8000/api/post', { 
+          axios.post('https://simple-posting-app-api.vercel.app/api/post', { 
                name: 'Guest',
                post: post,
                image: image
